@@ -1,0 +1,40 @@
+{
+  "Student": {
+  	"xqv6932":{
+	    "Name": "Emily Qiao",
+	    "classStanding": "Graduate",
+	    "Major": "CS",
+	    "record": {
+	    			"05-11-2020": 97,
+	     		    "05-12-2020": 96
+	     		  }
+  		},
+
+"npv7128":{
+	    "Name": "Naeem Patel",
+	    "classStanding": "Undergraduate",
+	    "Major": "CS",
+	    "record": {
+	    			"05-12-2020": 98,
+	     		    "05-13-2020": 96
+	     		  }
+  	},
+
+"yzh1927":{
+	    "Name": "Yiwei Zhang",
+	    "classStanding": "Graduate",
+	    "Major": "CS",
+	    "record": {
+	    		    "05-12-2020": 98,
+	     		    "05-13-2020": 96
+	     		  }
+  	}
+  },
+  "Course": {
+    "EECS394": {
+    	"Name":"Agile Software Development",
+    	"Roster":["xqv6932","npv7128"],
+    	"Instructor":"Christopher Riesbeck"
+    }
+  }
+}
