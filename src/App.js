@@ -49,16 +49,21 @@ function App() {
   const getTemp = s => { 
     for (const student in info.Student){
       if (s === info.Student[student]["netid"]){
-        let entries = Object.keys(info.Student[student]["record"])
-        let max = 0;
-        let dT = "";
-        for (const entry in entries){
-          if (Date.parse(entries[entry]) > max){
-            max = Date.parse(entries[entry]);
-            dT = entries[entry]
+          let entries = Object.keys(info.Student[student]["record"])
+          if (entries.length !== 0){
+          let max = 0;
+          let dT = "";
+          for (const entry in entries){
+            if (Date.parse(entries[entry]) > max){
+              max = Date.parse(entries[entry]);
+              dT = entries[entry]
+            }
           }
+          return info.Student[student]["record"][dT];
         }
-        return info.Student[student]["record"][dT];
+        else{
+          return (0, "");
+        }
       }
     }
   }
@@ -78,7 +83,7 @@ function App() {
               {professor.Courses.map((c) => c["Roster"].map((s) => 
                 <tr>
                   <td>{getName(s)}</td>
-                  <td>{getTemp(s)}</td>
+                  <td>{getTemp(s)["temp"]}</td>
                 </tr>
               ))}
             </table>
