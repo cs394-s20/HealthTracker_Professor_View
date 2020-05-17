@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Firebase from './firebase'
+import 'firebase/database';
 
 function App() {
+  const [info, setInfo] = useState([]);
+  const db = Firebase.database().ref();
+
+  useEffect( () => {
+    const handleData = snap => {
+      if (snap.val()) setInfo(snap.val());
+    }
+    db.on('value', handleData, error => alert(error));
+    return () => { db.off('value', handleData); };
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
