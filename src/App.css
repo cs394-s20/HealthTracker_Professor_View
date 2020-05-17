@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+#table-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.course-table{
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+tr, td, th {
+  border: 1px solid white;
+}
+
+th {
+  font-size: 30px;
+}
