@@ -32,23 +32,12 @@ function App() {
   }, []);
 
   /*
-    gets name of student by matching netid
-  */
-  const getName = s => {
-    for (const student in info.Student){
-      if (s === info.Student[student]["netid"]){
-        return info.Student[student]["Name"]
-      }
-    }
-  }
-
-  /*
     gets temperature (trust me, this is the best way to do it rn b/c it gets the most recent temp)
     in the future, we can just look for temperatures who's datetime matches today's date instead of the most recent date
   */
   const getTemp = s => { 
     for (const student in info.Student){
-      if (s === info.Student[student]["netid"]){
+      if (s === info.Student[student]["Name"]){
           let entries = Object.keys(info.Student[student]["record"])
           if (entries.length !== 0){
           let max = 0;
@@ -59,7 +48,8 @@ function App() {
               dT = entries[entry]
             }
           }
-          return info.Student[student]["record"][dT];
+          
+          return [info.Student[student]["record"][dT], dT];
         }
         else{
           return (0, "");
@@ -75,17 +65,21 @@ function App() {
           {professor.Courses.map((c) => 
           <div id="table-container">
             <h2><u>{c["Name"]}</u></h2>
-            <table class="course-table">
-              <tr>
+            <table className="course-table">
+              <thead>
                 <th>Student Name</th>
                 <th>Latest Temperature</th>
-              </tr> 
-              {professor.Courses.map((c) => c["Roster"].map((s) => 
-                <tr>
-                  <td>{getName(s)}</td>
-                  <td>{getTemp(s)["temp"]}</td>
-                </tr>
-              ))}
+                <th>Date of Temperature</th>
+              </thead> 
+              <tbody>
+                {professor.Courses.map((c) => c["Roster"].map((s) => 
+                  <tr>
+                    <td>{s}</td>
+                    <td>{getTemp(s)[0]["temp"]}</td>
+                    <td>{getTemp(s)[1]}</td> 
+                  </tr>
+                ))}
+              </tbody>
             </table>
           </div>)}   
       </header>
