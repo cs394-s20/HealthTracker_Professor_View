@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #05448b;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -76,9 +76,61 @@ caption {
 }
 
 .unhealthy {
-  border: 3px solid red;
+  border: 1px solid #f38910;
+  background-color: #f38910;
 }
 
-.healthy {
+/* .healthy {
   border: 3px solid green;
+} */
+
+.top-nav {
+  background-color: #f38910;
+  color: #003d59;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.prof-name {
+  color: white !important;
+}
+.prof-name:hover{
+  background-color: #f38910 !important;
+}
+
+.top-nav a {
+  float: left;
+  display: block;
+  color: #003d59;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.top-nav a:hover {
+  background: #05448b;
+  color: white;
+  text-decoration: none;
+}
+
+.temp-tables {
+  width: 80% !important;
+  max-width: 90% !important;
+  margin-left: 0px;
+  margin-right: 0px;
+  position: absolute !important;
+  top: 10%
+}
+
+#table-container {
+  align-items: baseline;
+}
+
+#table-container caption{
+  color: white;
+}
+
+.course-table th{
+  color:#d2e3ec;
 }

@@ -5,7 +5,9 @@ const Table = ({course, professor, students}) => {
     // course is info about the current course
     // professor is info about the current professor
     // students is info about all students
-    const [heatlhyTemp, setHealthyTemp] = useState(99);
+    // const [heatlhyTemp, setHealthyTemp] = useState(99);
+    const [heatlhyTemp] = useState(99);
+
 
     const getTemp = s => { 
         var i = 0;
@@ -38,7 +40,7 @@ const Table = ({course, professor, students}) => {
       return(
         <div id="table-container">
             <caption>{course["Name"]}</caption>
-            <table className="course-table">
+            <table className="course-table table-bordered">
               <thead>
                 <th scope="col">Student Name</th>
                 <th scope="col">Latest Temperature</th>
