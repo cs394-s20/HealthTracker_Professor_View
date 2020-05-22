@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #05448b;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -40,20 +40,97 @@
 #table-container{
   display: flex;
   flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 .course-table{
   align-items: center;
   justify-content: center;
   padding: 5px;
-  border: 1px solid white;
+  border-bottom: 1px solid white;
   border-collapse: collapse;
 }
 
-tr, td, th {
+table {
+  width: 90%;
+}
+
+th{
   border: 1px solid white;
+  font-size: 20px !important;
+}
+tr {
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  font-size: 18px;
 }
 
 th {
   font-size: 30px;
+}
+
+caption {
+  margin-bottom: -10px;
+}
+
+.unhealthy {
+  border: 1px solid #f38910;
+  background-color: #f38910;
+}
+
+/* .healthy {
+  border: 3px solid green;
+} */
+
+.top-nav {
+  background-color: #f38910;
+  color: #003d59;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.prof-name {
+  color: white !important;
+}
+.prof-name:hover{
+  background-color: #f38910 !important;
+}
+
+.top-nav a {
+  float: left;
+  display: block;
+  color: #003d59;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.top-nav a:hover {
+  background: #05448b;
+  color: white;
+  text-decoration: none;
+}
+
+.temp-tables {
+  width: 80% !important;
+  max-width: 90% !important;
+  margin-left: 0px;
+  margin-right: 0px;
+  position: absolute !important;
+  top: 10%
+}
+
+#table-container {
+  align-items: baseline;
+}
+
+#table-container caption{
+  color: white;
+}
+
+.course-table th{
+  color:#d2e3ec;
 }
