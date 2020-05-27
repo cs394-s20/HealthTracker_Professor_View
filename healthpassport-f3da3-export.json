@@ -10,6 +10,7 @@
     "Anam Khan" : {
       "Major" : "CS",
       "Name" : "Anam Khan",
+      "Status" : "undocumented",
       "classStanding" : "Graduate",
       "netid" : "akc6310",
       "record" : {
@@ -17,6 +18,7 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
           "Shortness of breath" : "no",
           "temp" : "97.9",
@@ -26,6 +28,7 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
           "Shortness of breath" : "no",
           "temp" : "98.5",
@@ -35,6 +38,7 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
           "Shortness of breath" : "no",
           "temp" : "100.9",
@@ -44,6 +48,7 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
           "Shortness of breath" : "no",
           "temp" : "101",
@@ -53,18 +58,20 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
           "Shortness of breath" : "no",
           "temp" : "105",
           "url" : "url goes here"
         },
         "5-26-2020" : {
-          "Abdominal pain" : "yes",
+          "Abdominal pain" : "no",
           "Body aches" : "no",
-          "Loss of taste" : "no",
-          "Severe cough" : "yes",
-          "Shortness of breath" : "no",
-          "temp" : "102",
+          "Loss of taste" : "yes",
+          "NOTIFIED" : "false",
+          "Severe cough" : "no",
+          "Shortness of breath" : "yes",
+          "temp" : "98",
           "url" : "url goes here"
         }
       }
@@ -72,6 +79,7 @@
     "Emily Qiao" : {
       "Major" : "CS",
       "Name" : "Emily Qiao",
+      "Status" : "undefined",
       "classStanding" : "Graduate",
       "netid" : "xqv6932",
       "record" : {
@@ -79,6 +87,7 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
           "Shortness of breath" : "no",
           "temp" : "100",
@@ -88,6 +97,7 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
           "Shortness of breath" : "no",
           "temp" : "98.5",
@@ -97,6 +107,7 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
           "Shortness of breath" : "no",
           "temp" : "98.9",
@@ -106,6 +117,7 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
           "Shortness of breath" : "no",
           "temp" : "98",
@@ -115,6 +127,7 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
           "Shortness of breath" : "no",
           "temp" : "105",
@@ -125,6 +138,7 @@
     "Naeem Patel" : {
       "Major" : "CS",
       "Name" : "Naeem Patel",
+      "Status" : "undefined",
       "classStanding" : "Undergraduate",
       "netid" : "npv7128",
       "record" : {
@@ -132,6 +146,7 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
           "Shortness of breath" : "no",
           "temp" : "96",
@@ -141,6 +156,7 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
           "Shortness of breath" : "no",
           "temp" : "98.7",
@@ -150,6 +166,7 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
           "Shortness of breath" : "no",
           "temp" : "97.0",
@@ -159,6 +176,7 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
           "Shortness of breath" : "no",
           "temp" : "100",
@@ -169,6 +187,7 @@
     "Quinn Shim" : {
       "Major" : "CS",
       "Name" : "Quinn Shim",
+      "Status" : "undefined",
       "classStanding" : "Undergraduate",
       "netid" : "qrs7059",
       "record" : {
@@ -176,6 +195,7 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
           "Shortness of breath" : "no",
           "temp" : "98.6",
@@ -185,6 +205,7 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
           "Shortness of breath" : "no",
           "temp" : "98.5",
@@ -195,6 +216,7 @@
     "Yiwei Zhang" : {
       "Major" : "CS",
       "Name" : "Yiwei Zhang",
+      "Status" : "undefined",
       "classStanding" : "Graduate",
       "netid" : "yzh1927",
       "record" : {
@@ -202,6 +224,7 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
           "Shortness of breath" : "no",
           "temp" : "98",
@@ -211,6 +234,7 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
           "Shortness of breath" : "no",
           "temp" : "99",
@@ -220,18 +244,20 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
           "Shortness of breath" : "no",
           "temp" : "94",
           "url" : "url goes here"
         },
         "5-26-2020" : {
-          "Abdominal pain" : "yes",
+          "Abdominal pain" : "no",
           "Body aches" : "no",
           "Loss of taste" : "no",
-          "Severe cough" : "yes",
+          "NOTIFIED" : "false",
+          "Severe cough" : "no",
           "Shortness of breath" : "no",
-          "temp" : "92",
+          "temp" : "90",
           "url" : "url goes here"
         }
       }
@@ -239,6 +265,7 @@
     "Zhen Huang" : {
       "Major" : "CS",
       "Name" : "Zhen Huang",
+      "Status" : "undefined",
       "classStanding" : "Graduate",
       "netid" : "zhn1979",
       "record" : {
@@ -246,7 +273,18 @@
           "Abdominal pain" : "yes",
           "Body aches" : "no",
           "Loss of taste" : "no",
+          "NOTIFIED" : "false",
           "Severe cough" : "yes",
+          "Shortness of breath" : "no",
+          "temp" : "103",
+          "url" : "url goes here"
+        },
+        "5-27-2020" : {
+          "Abdominal pain" : "no",
+          "Body aches" : "no",
+          "Loss of taste" : "no",
+          "NOTIFIED" : "false",
+          "Severe cough" : "no",
           "Shortness of breath" : "no",
           "temp" : "103",
           "url" : "url goes here"
