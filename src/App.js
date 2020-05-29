@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import Firebase from './firebase'
 import 'firebase/database';
-import Table from './components/Table/Table';
+import Table from './components/Table/Table 2';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
