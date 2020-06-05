@@ -26,20 +26,20 @@ const Table = ({course, professor, students}) => {
             <table className="course-table table-bordered">
               <thead>
                 <th scope="col">Student Name</th>
-                <th scope="col">Eligable for Class?</th>
+                <th scope="col">Eligible for In-Person Class?</th>
               </thead> 
               <tbody>
                     {course["Roster"].map((s) => 
                         getStatus(s) === "unhealthy" || getStatus(s) === "undocumented" ?
                             <tr>
                                 <td>{s}</td>
-                                <td>Not Eligable</td> 
+                                <td>{getStatus(s) === "unhealthy" ? "Ineligible (unhealthy record)" : "Ineligible (undocumented)"}</td> 
                             </tr>
                         
                         :
                             <tr>
                                 <td>{s}</td>
-                                <td>Eligable</td> 
+                                <td>Eligible</td> 
                             </tr>
                     )}
               </tbody>
