@@ -1,68 +1,95 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Health Passport (Professor Side)
+====================================
 
-## Available Scripts
+## DESCRIPTION
 
-In the project directory, you can run:
+Health Passport is a system which can guarantee a safer class environment during COVID-19. This repo is
+specifically for the professor side application. To see the other two platforms (Student side and Health 
+Service side), you can go to
 
-### `npm start`
+* https://github.com/cs394-s20/HealthTracker_Student_View
+* https://github.com/cs394-s20/HealthServices_View
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This web application allows professors to view information about their students.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+* Professors can view a list of students for each of their classes.
+* Professors can track whether or not students are able to attend class in-person.
+* Professors can use this information to decide whether or not to do lecture remotely the day of class.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## SYSTEM REQUIREMENTS
 
-### `npm run build`
+- Node v12.16.1
+- npm 6.14 + (6.14.4 recommended)
+- Mac OS (Catalina 10.15.5 +)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## INSTALLATION
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The best way to install the React App is to follow this link
 
-### `npm run eject`
+[https://reactjs.org/docs/getting-started.html]
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+which includes installing all of the dependencies you might need.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+After you set up the environment, now you have to install the packages for the App
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Normally the following command would just work fine
+```bash
+# npm install .
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## RUNNING
 
-## Learn More
+To run navigate to your repository via the
+command line, and run the executable:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+$ npm install
+$ npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This will start up a app server running on localhost port 3000.
 
-### Code Splitting
+## CONFIG FILE
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+In order to create your own firebase database, you should 
+- create a firebase account
+- create a project
+- create a real time database
+- import the firebase_database_schema.json 
+- copy the configurations from firebase into ./components/config.js
+- create a img/ in firebase storage
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## API DOCUMENTATION
 
-### Making a Progressive Web App
+The [Material UI](https://material-ui.com/) allows you to format 
+your frontend.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
+## CONTRIBUTE
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+If you'd like to contribute to our project, start by forking the repo on GitHub:
 
-### Deployment
+https://github.com/cs394-s20/HealthTracker_Student_View
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+To get all of the dependencies, use npm install or view dependencies in the package.json. The best way to get
+your changes merged back into core is as follows:
 
-### `npm run build` fails to minify
+1. Clone down your fork
+1. Create a thoughtfully named topic branch to contain your change
+1. Hack away
+1. If you are adding new functionality, document it in the README
+1. Push the branch up to GitHub
+1. Send a pull request to the HealthTracker_Student_View project.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## RELEASING
+
+In order to release the project in public, you should enable deployment through your firebase account.
+
+## FUTURE IMPROVEMENTS
+
+- We would recommend counting the students who are ineligable to attend class. This would streamline the important information for the professor.
+- Before production deployment, it would be ideal to incorporate the Canvas API and Caesar API of
+your university.
