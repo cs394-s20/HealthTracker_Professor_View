@@ -25,26 +25,20 @@ function App() {
 					cList.push(snap.val()["Course"][course]);
 				}
 				setInfo({ Course: cList, Student: sList })
-				setProfessor({ Name: "Chris Riesbeck", Courses: [cList[0]] })
+				/* will need to pull professor from firebase here */
+				setProfessor({ Name: "", Courses: [] })
 			}
 		}
 		db.on('value', handleData, error => alert(error));
 		return () => { db.off('value', handleData); };
 	}, [db]);
 
-	/*
-	  gets temperature (trust me, this is the best way to do it rn b/c it gets the most recent temp)
-	  in the future, we can just look for temperatures who's datetime matches today's date instead of the most recent date
-	*/
-
 	return (
 
 		<div className="App">
 			<header className="App-header">
 				<div className='top-nav'>
-					{/* maybe lead to professo's temperature? */}
 					<a className='prof-name' href="#course">Hello, {professor.Name}!</a>
-					{/* ideally a dropdown menu or something */}
 					<a href="#course">Courses</a>
 				</div>
 				<div class="col-sm-6 col-sm-offset-3 temp-tables">

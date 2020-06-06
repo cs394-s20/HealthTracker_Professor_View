@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 import { Tooltip } from "@material-ui/core";
 
-const Table = ({course, professor, students}) => {
-    // course is info about the current course
-    // professor is info about the current professor
-    // students is info about all students
-    // const [heatlhyTemp, setHealthyTemp] = useState(99);
-    const [heatlhyTemp] = useState(99);
-
-
+const Table = ({course, students}) => {
+    /*
+      Pulls the current status of the students
+    */
     const getStatus = s => { 
         var i = 0;
         for (i = 0; i < students.length; i++){
