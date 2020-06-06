@@ -1,69 +1,46 @@
-import React, { useState } from "react";
-import { Tooltip } from "@material-ui/core";
+import React from "react";
 
-const Table = ({course, professor, students}) => {
-    // course is info about the current course
-    // professor is info about the current professor
-    // students is info about all students
-    // const [heatlhyTemp, setHealthyTemp] = useState(99);
-    const [heatlhyTemp] = useState(99);
+const Table = ({course}) => {
+    // make students a list of students with name and temp
+    // make course just the name of the course
 
-
-    const getTemp = s => { 
-        var i = 0;
-        for (i = 0; i < students.length; i++){
-            console.log(i);
-            if (s === students[i]["Name"]){
-                let entries = Object.keys(students[i]["record"])
-
-                // if the student has temperatures recorded, get most recent temp
-                if (entries.length !== 0){
-                    let max = 0;
-                    let dT = "";
-                    for (const entry in entries){
-                        if (Date.parse(entries[entry]) > max){
-                            max = Date.parse(entries[entry]);
-                            dT = entries[entry]
-                        }
-                    }
-              
-                    return [students[i]["record"][dT]["temp"], dT];
-                }
-                else {
-                    return ("-", "-");
-                }
-           }
-        }
-        return ("-", "-")
-      }
 
       return(
+        // <div id="table-container">
+        //     <h2><u>{c["Name"]}</u></h2>
+        //     <table className="course-table">
+        //       <thead>
+        //         <th>Student Name</th>
+        //         <th>Latest Temperature</th>
+        //         <th>Date of Temperature</th>
+        //       </thead> 
+        //       <tbody>
+        //         {professor.Courses.map((c) => c["Roster"].map((s) => 
+        //           <tr>
+        //             <td>{s}</td>
+        //             <td>{getTemp(s)[0]["temp"]}</td>
+        //             <td>{getTemp(s)[1]}</td> 
+        //           </tr>
+        //         ))}
+        //       </tbody>
+        //     </table>
+        //   </div>
         <div id="table-container">
-            <caption>{course["Name"]}</caption>
-            <table className="course-table table-bordered">
+            <h2><u>{course["Name"]}</u></h2>
+            <table className="course-table">
               <thead>
-                <th scope="col">Student Name</th>
-                <th scope="col">Latest Temperature</th>
-                <th scope="col">Date of Temperature</th>
+                <th>Student Name</th>
+                <th>Latest Temperature</th>
+                <th>Date of Temperature</th>
               </thead> 
               <tbody>
-                    {course["Roster"].map((s) => 
-                        Number(getTemp(s)[0]) > heatlhyTemp ?
-                            <tr>
-                                <td class="unhealthy">{s}</td>
-                                <Tooltip title="temperature not within healthy range" aria-label="temperature not within healthy range"><td>{getTemp(s)[0]}</td></Tooltip>
-                                <td>{getTemp(s)[1]}</td> 
-                            </tr>
-                        
-                        :
-                            <tr>
-                                <td class="healthy">{s}</td>
-                                <Tooltip title="temperature within healthy range" aria-label="temperature within healthy range"><td>{getTemp(s)[0]}</td></Tooltip>
-                                <td>{getTemp(s)[1]}</td> 
-                            </tr>
-                    )}
+                <tr>
+                    <td>{course["Name"]}</td>
+                    <td>Temp</td>
+                    <td>Date</td>
+                </tr>
               </tbody>
-            </table>    
+            </table>
           </div>
       );
     }

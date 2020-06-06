@@ -13,12 +13,24 @@
 		"classStanding" : "Graduate",
 		"netid" : "akc6310",
 		"record" : {
-		  "5-19-2020" : {
-			"temp" : "98",
+		  "5-11-2020" : {
+			"temp" : "97.9",
 			"url" : "url goes here"
 		  },
-		  "5-21-2020" : {
-			"temp" : "120",
+		  "5-12-2020" : {
+			"temp" : "98.5",
+			"url" : "url goes here"
+		  },
+		  "5-17-2020" : {
+			"temp" : "100.9",
+			"url" : "url goes here"
+		  },
+		  "5-18-2020" : {
+			"temp" : "101",
+			"url" : "url goes here"
+		  },
+		  "5-19-2020" : {
+			"temp" : "105",
 			"url" : "url goes here"
 		  }
 		}
@@ -29,11 +41,11 @@
 		"classStanding" : "Graduate",
 		"netid" : "xqv6932",
 		"record" : {
-		  "05-11-2020" : {
+		  "5-11-2020" : {
 			"temp" : "100",
 			"url" : "url goes here"
 		  },
-		  "05-12-2020" : {
+		  "5-12-2020" : {
 			"temp" : "98.5",
 			"url" : "url goes here"
 		  },
@@ -57,16 +69,20 @@
 		"classStanding" : "Undergraduate",
 		"netid" : "npv7128",
 		"record" : {
-		  "05-12-2020" : {
+		  "5-12-2020" : {
 			"temp" : "96",
 			"url" : "url goes here"
 		  },
-		  "05-13-2020" : {
+		  "5-13-2020" : {
 			"temp" : "98.7",
 			"url" : "url goes here"
 		  },
 		  "5-19-2020" : {
 			"temp" : "97.0",
+			"url" : "url goes here"
+		  },
+		  "5-25-2020" : {
+			"temp" : "100",
 			"url" : "url goes here"
 		  }
 		}
@@ -77,11 +93,11 @@
 		"classStanding" : "Undergraduate",
 		"netid" : "qrs7059",
 		"record" : {
-		  "05-15-2020" : {
+		  "5-15-2020" : {
 			"temp" : "98.6",
 			"url" : "url goes here"
 		  },
-		  "05-17-2020" : {
+		  "5-17-2020" : {
 			"temp" : "98.5",
 			"url" : "url goes here"
 		  }
@@ -93,12 +109,16 @@
 		"classStanding" : "Graduate",
 		"netid" : "yzh1927",
 		"record" : {
-		  "05-12-2020" : {
+		  "5-12-2020" : {
 			"temp" : "98",
 			"url" : "url goes here"
 		  },
-		  "05-13-2020" : {
+		  "5-13-2020" : {
 			"temp" : "99",
+			"url" : "url goes here"
+		  },
+		  "5-25-2020" : {
+			"temp" : "94",
 			"url" : "url goes here"
 		  }
 		}
