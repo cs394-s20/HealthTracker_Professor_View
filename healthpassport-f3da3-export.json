@@ -3,16 +3,16 @@
     "EECS394" : {
       "Instructor" : "Christopher Riesbeck",
       "Name" : "Agile Software Development",
-      "Roster" : [ "Emily Qiao", "Naeem Patel" ]
+      "Roster" : [ "Tom Smith", "Jane Doe" ]
     }
   },
   "Student" : {
-    "Anam Khan" : {
+    "Johnny Appleseed" : {
       "Major" : "CS",
-      "Name" : "Anam Khan",
+      "Name" : "Johnny Appleseed",
       "Status" : "undocumented",
       "classStanding" : "Graduate",
-      "netid" : "akc6310",
+      "netid" : "jac6310",
       "record" : {
         "5-11-2020" : {
           "Abdominal pain" : "yes",
@@ -76,12 +76,12 @@
         }
       }
     },
-    "Emily Qiao" : {
+    "Tom Smith" : {
       "Major" : "CS",
-      "Name" : "Emily Qiao",
+      "Name" : "Tom Smith",
       "Status" : "undefined",
       "classStanding" : "Graduate",
-      "netid" : "xqv6932",
+      "netid" : "tsc6932",
       "record" : {
         "5-11-2020" : {
           "Abdominal pain" : "yes",
@@ -135,12 +135,12 @@
         }
       }
     },
-    "Naeem Patel" : {
+    "Jane Doe" : {
       "Major" : "CS",
-      "Name" : "Naeem Patel",
+      "Name" : "Jane Doe",
       "Status" : "undefined",
       "classStanding" : "Undergraduate",
-      "netid" : "npv7128",
+      "netid" : "jdc7128",
       "record" : {
         "5-12-2020" : {
           "Abdominal pain" : "yes",
@@ -184,12 +184,12 @@
         }
       }
     },
-    "Quinn Shim" : {
+    "Thomas Crane" : {
       "Major" : "CS",
-      "Name" : "Quinn Shim",
+      "Name" : "Thomas Crane",
       "Status" : "undefined",
       "classStanding" : "Undergraduate",
-      "netid" : "qrs7059",
+      "netid" : "thc7059",
       "record" : {
         "5-15-2020" : {
           "Abdominal pain" : "yes",
@@ -213,12 +213,12 @@
         }
       }
     },
-    "Yiwei Zhang" : {
+    "Cierra Vega" : {
       "Major" : "CS",
-      "Name" : "Yiwei Zhang",
+      "Name" : "Cierra Vega",
       "Status" : "undefined",
       "classStanding" : "Graduate",
-      "netid" : "yzh1927",
+      "netid" : "cvs1927",
       "record" : {
         "5-12-2020" : {
           "Abdominal pain" : "yes",
@@ -262,12 +262,12 @@
         }
       }
     },
-    "Zhen Huang" : {
+    "Miranda Shaffer" : {
       "Major" : "CS",
-      "Name" : "Zhen Huang",
+      "Name" : "Miranda Shaffer",
       "Status" : "undefined",
       "classStanding" : "Graduate",
-      "netid" : "zhn1979",
+      "netid" : "msh1979",
       "record" : {
         "5-19-2020" : {
           "Abdominal pain" : "yes",
